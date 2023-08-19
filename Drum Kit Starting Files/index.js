@@ -6,6 +6,8 @@ for (var i = 0; i < noOfClicks; i++){
         var buttonClicked = this.innerHTML ;
     
         makesound(buttonClicked) ;
+
+        buttonAnimation(buttonClicked) ;
     }
     );
     }
@@ -15,6 +17,7 @@ for (var i = 0; i < noOfClicks; i++){
 
 document.addEventListener("keypress", function(event){
     makesound(event.key);
+    buttonAnimation(event.key) ;
 })
 function makesound(key){
 
@@ -52,5 +55,17 @@ function makesound(key){
         default:
             console.log("buttonClicked");
     }
+}
+
+function buttonAnimation(currentKey) {
+    var activeButton = document.querySelector("." + currentKey);
+
+
+    activeButton.classList.add("pressed");
+    setTimeout(function(){
+        activeButton.classList.remove("pressed");
+    },100);
+
+    
 }
 
