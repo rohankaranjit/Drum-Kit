@@ -2,3 +2,15 @@ This is drum kit , One of my favorite projects I have build so far.
 I created this drum kit using HTML , CSS and JavaScript.
 This drum consists of 6 boxes with different sound such as snare,kick,tom etc.
 
+Each boxes are used with click or keydown eventListener.
+For eg letter Q can cosist of Tom sound whereas letter A can consist of Snare Sound.
+Here also different letter consists of different sound .
+You can use this drum kit to make your own drum in your laptop.
+
+
+
+
+Do try it!!!!!!!!!!!!!
+
+
+Thank you!!
